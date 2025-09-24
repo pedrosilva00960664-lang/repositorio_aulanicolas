@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>//javascript nao precisa declarar variavel
+
+        let numero = 2010; //variável de escopo local
+        var nome = "joao"; //variável de escopo global
+        const condicao = true; //variavel do tipo constante -> valor de tipo inalteravel
+
+        idade = 2025 - numero;
+
+        console.log(nome, idade, condicao);
+
+        if (numero > 2000) {
+            console.log("você e novo ainda");
+        }
+        else {
+            console.log("você esta ficando velho");
+        }
+        function somar(x, y) {
+            return x + y;
+        }
+        console.log(somar(10, 20));
+
+        var irmao1 = "Davi";
+        var irmao2 = "Julia";
+
+        var idade1 = 19;
+        var idade2 = 21;
+
+        let soma_dos_irmaos = idade + idade1 + idade2
+
+        console.log("nome dos irmão", irmao1,"e sua idade",idade1);
+        console.log("nome da irmã", irmao2,"e sua idade",idade1);
+        console.log("a soma das idade dos iramos", soma_dos_irmaos)
+
+        let valor_inserido = 1200
+
+        valor_total = valor_inserido * 0.30
+        valor_do_desconto = valor_inserido - valor_total
+
+        console.log("valor que foi inserido", valor_inserido);
+        console.log("valor total recebido", valor_total);
+        console.log("valor do desconto", valor_do_desconto);
+
+        let numero_de_parcelas = 12;
+        let valor_compra = 1200;
+
+        valor_da_parcela = valor_compra / numero_de_parcelas
+
+        console.log("nuemro de parcelas",numero_de_parcelas);
+        console.log("valor da compra", valor_compra);
+        console.log("cada parcela será",valor_da_parcela);
+
+    </script>
+</body>
+
+</html>
