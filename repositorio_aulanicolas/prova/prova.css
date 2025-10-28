@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.conteiner{
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.bet {
+    justify-content: space-between;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(113, 113, 224);
+}
+.quadrado{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+}
+.meiao{
+    justify-content: center;
+    align-items: center;
+}
+.miniQ{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+.linha{
+    height: 33.3%;
+}
+.baixo{
+    align-items: end;
+}
+.cantod{
+    justify-content: end;
+}
+.meta{
+    height: 50%;
+}
+.cardA{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.cardV{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.espace{
+    justify-content: space-around;
+}
+.meia{
+    justify-content: center;
+}
+.p-left-50{
+    padding-right: 50%;
+}
+.coluna {
+    flex-direction: column;
+  }
+  
+  .centro {
+    justify-content: center;
+  }
