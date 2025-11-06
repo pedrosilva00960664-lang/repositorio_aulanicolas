@@ -1,31 +1,53 @@
+
+Mensagem de Gustavo Iwamoto
+Gustavo Iwamoto
+Criado a 17:1417:14
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Consultas Médicas</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-   <div class="web">
-            <div class="conteiner1">
-                <div class="form">
-                    <h2>Bem-vindo de volta</h2>
-                    <p>venha logar aqui!</p>
-                    <button class="btn">CADASTRE-SE</button>
-                </div>
-            </div>
-            <div class="conteiner2">
-                <h1>ACESSE SUA CONTA</h1>
-                <div class="form_input">
-                <input type="text" placeholder="   Usuario" class="input" id="usuario">
-                <input type="password" placeholder="   Senha" class="input" id="senha">
-                <button class="btn">ENTRAR</button>
-            </div>
-        </div>
-   </div>
+  <div class="container">
+
+    <!-- LOGIN -->
+    <div id="login-container" class="form-box">
+      <div class="icon">
+        <span class="calendar">📅</span>
+      </div>
+      <h2>Sistema de Consultas Médicas</h2>
+      <p>Faça login para acessar seu painel</p>
+      <form id="login-form">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="seu@email.com" required>
+        <label>Senha</label>
+        <input type="password" id="loginSenha" placeholder="******" required>
+        <button type="submit">Entrar →</button>
+      </form>
+
+      <div class="demo-box">
+        <p><strong>Contas de demonstração:</strong></p>
+        <p><strong>Paciente:</strong> paciente@exemplo.com<br>
+            <strong>Médico:</strong> medico@exemplo.com<br>
+            <strong>Admin:</strong> admin@exemplo.com<br>
+            <strong>Senha para todos:</strong> 123456
+        </p>
+      </div>
+
+      <p class="link">
+        Não tem uma conta? <a href="#" id="toRegister">Cadastre-se</a>
+      </p>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

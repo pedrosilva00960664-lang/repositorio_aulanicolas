@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área do Paciente — Agenda</title>
+  <link rel="stylesheet" href="paciente.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-title">
+      <h1>Área do Paciente</h1>
+      <p>Bem-vindo(a), Paciente Exemplo</p>
+    </div>
+    <div class="header-buttons">
+      <button id="btn-perfil">👤 Perfil</button>
+      <button id="btn-sair">🚪 Sair</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Cards -->
+    <section class="cards">
+      <div class="card">
+        <h3>🩺 Consulta de Triagem</h3>
+        <p>Avaliação inicial e exame geral</p>
+        <p>Clique para agendar uma consulta de triagem ou exame geral. Ideal para check-ups e primeiras consultas.</p>
+      </div>
+
+      <div class="card emergency">
+        <h3>⚠️ Emergência Ginecológica</h3>
+        <p>Atendimento prioritário e imediato</p>
+        <p>Clique para solicitar um atendimento de emergência ginecológica. Prioridade no agendamento.</p>
+      </div>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" id="tab-proximas">🕒 Próximas Consultas</div>
+      <div class="tab" id="tab-historico">📄 Histórico</div>
+    </div>
+
+    <!-- Consultas list -->
+    <section class="consultas" id="consultas-container">
+      <h2>Suas Próximas Consultas</h2>
+      <p id="total-consultas">3 consulta(s) agendada(s)</p>
+
+      <div class="consulta-card">
+        <div class="consulta-info">
+          <h4>Dr. Rojelio <span class="especialidade">Ginecologia</span></h4>
+          <p>📅 sexta-feira, 7 de novembro de 2025</p>
+          <p>⏰ 10:00 (30 minutos)</p>
+        </div>
+        <div class="status pendente">Pendente</div>
+      </div>
+
+      <div class="consulta-card">
+        <div class="consulta-info">
+          <h4>Dr. Rafael <span class="especialidade">Pediatria</span></h4>
+          <p>📅 sábado, 8 de novembro de 2025</p>
+          <p>⏰ 11:00 (30 minutos)</p>
+        </div>
+        <div class="status agendada">Agendada</div>
+      </div>
+
+      <div class="consulta-card">
+        <div class="consulta-info">
+          <h4>Dr. Fernando <span class="especialidade">Urologia</span></h4>
+          <p>📅 domingo, 9 de novembro de 2025</p>
+          <p>⏰ 08:00 (30 minutos)</p>
+        </div>
+        <div class="status agendada">Agendada</div>
+      </div>
+    </section>
+
+    <!-- Calendário -->
+    <section class="calendar-section">
+      <div class="calendar-header">
+        <div class="calendar-title">
+          <button id="prev">‹</button>
+          <div id="current-label">Novembro 2025</div>
+          <button id="next">›</button>
+        </div>
+
+        <div class="calendar-controls">
+          <div class="view-buttons">
+            <button class="view-btn active" data-view="month">Mês</button>
+            <button class="view-btn" data-view="week">Semana</button>
+            <button class="view-btn" data-view="day">Dia</button>
+          </div>
+          <button id="today">Hoje</button>
+        </div>
+      </div>
+
+      <div id="calendar"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Nova Conta</title>
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="form-card">
+      <div class="form-header">
+        <div class="icon">📅</div>
+        <h2>Criar Nova Conta</h2>
+        <p>Escolha seu perfil e preencha seus dados</p>
+      </div>
+
+      <form id="cadastroForm">
+        <!-- Tipo de perfil -->
+        <label for="perfil">Tipo de Perfil *</label>
+        <select id="perfil" required>
+          <option value="">Selecione seu perfil</option>
+          <option value="paciente">Paciente</option>
+          <option value="medico">Médico / Equipe Médica</option>
+          <option value="admin">Administrador</option>
+        </select>
+
+        <!-- Campos básicos -->
+        <div class="form-row">
+          <div>
+            <label>Nome Completo *</label>
+            <input type="text" placeholder="Seu nome completo" required />
+          </div>
+          <div>
+            <label>Email *</label>
+            <input type="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label>Senha *</label>
+            <input type="password" id="senha" placeholder="Mínimo 6 caracteres" minlength="6" required />
+          </div>
+          <div>
+            <label>Confirmar Senha *</label>
+            <input type="password" id="confirmarSenha" placeholder="Repita a senha" required />
+          </div>
+        </div>
+
+        <label>Telefone</label>
+        <input type="tel" placeholder="(11) 99999-9999" />
+
+        <!-- Campos extras (médico) -->
+        <div id="camposMedico" class="extra-section hidden">
+          <h4>Informações Profissionais</h4>
+          <div class="form-row">
+            <div>
+              <label>CRM *</label>
+              <input type="text" placeholder="CRM/UF 123456" />
+            </div>
+            <div>
+              <label>Especialidade *</label>
+              <input type="text" placeholder="Ex: Cardiologia" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Campos extras (administrador) -->
+        <div id="camposAdmin" class="extra-section hidden admin-section">
+          <h4>🛡️ Verificação de Administrador</h4>
+          <p>
+            Para criar uma conta de administrador, você precisa de um código de acesso especial.
+            Este código é fornecido apenas para pessoas autorizadas pela gestão do sistema.
+          </p>
+          <label>Código de Acesso Administrativo *</label>
+          <input type="text" id="codigoAdmin" placeholder="Digite o código de acesso" />
+          <p class="codigo-demo">Código de demonstração: <span>ADMIN2024</span></p>
+        </div>
+
+        <button type="submit" class="btn">Criar Conta</button>
+
+        <p class="login-text">Já tem uma conta? <a href="login.html">Faça login</a></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
