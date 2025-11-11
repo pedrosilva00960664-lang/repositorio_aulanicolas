@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.web{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
